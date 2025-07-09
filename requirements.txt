@@ -1,0 +1,35 @@
+# Core game development
+pygame>=2.5.0
+pygame-gui>=0.6.0
+pyglet>=2.0.0
+
+# # Web deployment
+# pyodide>=0.23.0
+
+# # Mobile deployment (via Kivy)
+# kivy>=2.2.0
+# buildozer>=1.5.0
+
+# Math and physics
+numpy>=1.24.0
+pymunk>=6.4.0
+
+# Audio processing
+pydub>=0.25.1
+
+# Networking (if multiplayer)
+websockets>=11.0.0
+requests>=2.31.0
+
+# Development tools
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.4.0
+
+# Asset processing
+pillow>=10.0.0
+
+# Configuration
+pyyaml>=6.0.0
+toml>=0.10.2
