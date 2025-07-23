@@ -24,17 +24,19 @@ class RenderSystem:
             # Draw player if we have engine reference
             if self._engine:
                 # Draw white square for player
-                player_size = 50
-                player_rect = (
-                    self._engine.player_x - player_size // 2,
-                    self._engine.player_y - player_size // 2,
-                    player_size,
-                    player_size
-                )
-                pygame.draw.rect(self.screen, (255, 255, 255), player_rect)
+                # player_size = 50
+                # player_rect = (
+                #     self._engine.player_x - player_size // 2,
+                #     self._engine.player_y - player_size // 2,
+                #     player_size,
+                #     player_size
+                # )
+                # pygame.draw.rect(self.screen, (255, 255, 255), player_rect)
                 
-                # Draw a simple border around the player
-                pygame.draw.rect(self.screen, (100, 100, 100), player_rect, 2)
+                # # Draw a simple border around the player
+                # pygame.draw.rect(self.screen, (100, 100, 100), player_rect, 2)
+                self._engine.players.draw(self.screen)
+
             
             # Update display
             pygame.display.flip()
